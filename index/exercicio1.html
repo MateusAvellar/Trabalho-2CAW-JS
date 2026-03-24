@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 1</title>
+</head>
+
+    <script >
+
+function verificar() {
+
+    let numero = document.getElementById("numero").value;
+
+    if (numero > 0) {
+        document.getElementById("resultado").innerText = "O número é positivo";
+    } 
+    else if (numero < 0) {
+        document.getElementById("resultado").innerText = "O número é negativo";
+    } 
+    else {
+        document.getElementById("resultado").innerText = "O número é zero";
+    }
+
+}
+
+    </script>
+<body>
+
+    <h1>Exercício 1</h1>
+
+    <label>Informe o número:</label>
+    <input type="number" id="numero">
+
+    <button onclick="verificar()">Validar</button>
+
+    <p id="resultado"></p>
+
+
+
+</body>
+</html>
