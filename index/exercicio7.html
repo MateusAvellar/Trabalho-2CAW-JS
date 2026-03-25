@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 7</title>
+</head>
+
+    <script>
+
+function mostrarDia() {
+
+    let numero = Number(document.getElementById("numero").value);
+    let resultado = "";
+
+    switch (numero) {
+        case 1:
+            resultado = "Domingo";
+            break;
+        case 2:
+            resultado = "Segunda-feira";
+            break;
+        case 3:
+            resultado = "Terça-feira";
+            break;
+        case 4:
+            resultado = "Quarta-feira";
+            break;
+        case 5:
+            resultado = "Quinta-feira";
+            break;
+        case 6:
+            resultado = "Sexta-feira";
+            break;
+        case 7:
+            resultado = "Sábado";
+            break;
+        default:
+            resultado = "Número inválido";
+    }
+
+    document.getElementById("resultado").innerText = resultado;
+}
+
+    </script>
+
+<body>
+
+    <h1>Exercício 7</h1>
+
+    <label>Digite um número (1 a 7):</label>
+    <input type="number" id="numero">
+
+    <button onclick="mostrarDia()">Mostrar</button>
+
+    <p id="resultado"></p>
+
+    <script src="../script/exercicio7.js"></script>
+
+</body>
+</html>

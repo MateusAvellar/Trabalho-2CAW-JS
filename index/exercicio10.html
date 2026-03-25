@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 10</title>
+</head>
+
+<script>
+
+    function inverterNumero() {
+
+    let numero = document.getElementById("numero").value;
+    let invertido = "";
+
+    for (let i = numero.length - 1; i >= 0; i--) {
+        invertido += numero[i];
+    }
+
+    document.getElementById("resultado").innerText =
+        "Número invertido: " + invertido;
+}
+</script>
+<body>
+
+    <h1>Exercício 10</h1>
+
+    <label>Digite um número:</label>
+    <input type="number" id="numero">
+
+    <button onclick="inverterNumero()">Inverter</button>
+
+    <p id="resultado"></p>
+
+    <script src="../script/exercicio10.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 8</title>
+</head>
+<script> 
+
+function calcularFatorial() {
+
+    let numero = Number(document.getElementById("numero").value);
+    let fatorial = 1;
+
+    for (let i = 1; i <= numero; i++) {
+        fatorial *= i;
+    }
+
+    document.getElementById("resultado").innerText =
+        "Fatorial: " + fatorial;
+}
+
+
+</script>
+
+<body>
+
+    <h1>Exercício 8</h1>
+
+    <label>Digite um número:</label>
+    <input type="number" id="numero">
+
+    <button onclick="calcularFatorial()">Calcular</button>
+
+    <p id="resultado"></p>
+
+    <script src="../script/exercicio8.js"></script>
+
+</body>
+</html>
